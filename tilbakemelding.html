@@ -4,11 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Craftsvilla  Creative workshops, inspiring experiences and moments together.">
-    <title>Craftsvilla</title>
+    <meta name="description" content="Craftsvilla | Kreativitet, samhold og avslapning.">
+    <title>Craftsvilla | Tilbakemelding</title>
+
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
+    <link rel="shortcut icon" href="assets/images/icons//favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/forms.css">
+
 
     <script src="js/components.js" defer></script>
 </head>
@@ -17,11 +30,77 @@
     <div id="header"></div>
 
     <main class="container">
-        <section class="" id="">
-            <div class="">
+        <section>
+            <div>
+                <h1>Tilbakemelding</h1>
+                <p class="intro-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis lacus eget neque
+                    sollicitudin, in commodo mauris porttitor. Fusce posuere tincidunt mi eu consequat. Nunc id nibh
+                    augue.
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis lacus eget neque
+                sollicitudin, in commodo mauris porttitor. Fusce posuere tincidunt mi eu consequat. Nunc id nibh augue.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi mi
+                felis, auctor non molestie maximus, imperdiet vel mauris. Curabitur in facilisis massa. Vestibulum
+                fringilla elit placerat cursus placerat. Nulla sed augue vel ante bibendum elementum.
+            </p>
+            <form class="feedback-form">
+                <div class="form-group">
+                    <label for="name">Navn:</label>
+                    <input type="text" id="name" name="name" placeholder="Ditt navn" required>
+                </div>
+                <div class="form-group">
+                    <label for="workshop">Workshop:</label>
+                    <input type="text" id="workshop" name="workshop" placeholder="Navn på workshop" required>
+                </div>
+                <div class="form-group">
+                    <label for="feedback">Din tilbakemelding:</label>
+                    <textarea type="textarea" id="feedback" name="feedback" rows="5" column="5"
+                        placeholder="Skriv din tilbakemelding" requireds></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" value="Send" class="btn btn-primary"> Send</button>
+                </div>
+            </form>
+            </div>
+        </section>
 
-                <h1>Tilbakemelding
-                </h1>
+        <!--Feedback three col-->
+        <section>
+
+            <h2>Dette sier kundene våre </h2>
+            <div class="flex-equal gap-28">
+                <div class="bg-white rounded p-4">
+                    <div class="items-center bg-pink h-56 rounded">
+                        <img src="/assets/images/icons/services3.svg" alt="mosaikk kunst logo">
+                    </div>
+                    <div class="">
+                        <h3>Navn Etternavn </h3>
+                        <p class="text-secondary text-14">Sett inkluderer: Ramme, A4 størrelse treplate, små fargede
+                            steiner, gummi.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded p-4">
+                    <div class="items-center bg-pink h-56 rounded">
+                        <img src="/assets/images/icons/services2.svg" alt="akvarellmaling logo">
+                    </div>
+                    <div class="">
+                        <h3>Navn Etternavn </h3>
+                        <p class="text-secondary text-14">Sett inkluderer: Ramme, akvarellpapir med designmal,
+                            akvarellfarger, pensler.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded p-4">
+                    <div class="items-center bg-pink h-56 rounded">
+                        <img src="/assets/images/icons/services3.svg" alt="lerretsmalingt logo">
+                    </div>
+                    <div class="">
+                        <h3>Navn Etternavn </h3>
+                        <p class="text-secondary text-14">Sett inkluderer: Ramme, akrylpapir med designmal, akrylfarger,
+                            pensler.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

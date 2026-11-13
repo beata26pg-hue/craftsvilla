@@ -4,8 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Craftsvilla  Creative workshops, inspiring experiences and moments together.">
-    <title>Craftsvilla | >Kreativitet, samhold og avslapning .</title>
+    <meta name="description" content="Craftsvilla | Kreativitet, samhold og avslapning.">
+    <title>Craftsvilla | Kreativitet, samhold og avslapning.</title>
+
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components.css">
@@ -17,25 +28,142 @@
 
     <div id="header"></div>
 
-    <!-- Hero -->
     <main class="container">
+        <!-- Hero -->
         <section class="hero" id="home">
-            <div class="hero-content">
-                <p class="">Beskrivelse</p>
+            <div class="flex-equal gap-28 mb-4">
+                <div class="hero-content">
+                    <span class="bg-sage p-4 rounded text-13 font-bold text-green uppercase">skap • del • slap av</span>
 
-                <h1>Hjem<br>
-                    <span>overskrift linje 2.</span>
-                </h1>
-
-                <p class="hero-description">
-                    Hero beskrivelse
-                </p>
-
-                <a href="#" class="primary-button">
-                    Booking/workshops
-                </a>
+                    <h1>La kreativiteten
+                        blomstre.
+                    </h1>
+                    <p class="hero-description pb-4">
+                        Et sted for skaperglede, små pauser og store ideer. Hos Craftsvilla møtes mennesker i alle aldre
+                        for
+                        å lage noe fint — sammen.
+                    </p>
+                    <div class="btn-group ">
+                        <a href="#services" class="btn btn-primary mr-4">
+                            Utforsk aktivitetene
+                        </a>
+                        <a href="#about" class="text-underline">
+                            Slik fungerer det
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image hero-border rounded bg-sage">
+                    <div class="bg-yellow rounded h-full py-10">
+                        <div class="circle items-center">
+                            <div>
+                                <img src="/assets/images/icons/sun_shape.png" alt="Illustrasjon av en sol" width="80"
+                                    height="80">
+                            </div>
+                        </div>
+                        <div class="headline items-center">
+                            <h2 class="uppercase">Lag noe som er ditt</h2>
+                            <p>Keramikk • maling • tekstil • gode øyeblikk</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        <!-- Intro -->
+        <section class="bg-green text-white py-10">
+            <div class="items-center text-center ">
+                <div class="p-14">
+                    <p class="text-yellow uppercase text-12 font-bold">Et lite pusterom med stor
+                        skaperglede</p>
+                    <h2 class="text-white mt-0 pt-0">Her handler det ikke om å være flink.</h2>
+                    <p class="text-cream">Det handler om å prøve, leke, utforske og være sammen. Kom som du er - gå hjem
+                        med noe du har
+                        laget selv.</p>
+                </div>
+            </div>
+        </section>
+        <!--Services three col-->
+        <section id="services">
+            <p class="text-orange font-bold uppercase text-12">Finn din favoritt</p>
+            <h2 class="mt-0 pt-0">Skap med hendene. Senk skuldrene. </h2>
+            <div class="flex-equal gap-28 mt-8">
+                <div class="bg-white rounded p-4">
+                    <div class="items-center bg-pink h-56 rounded">
+                        <img src="/assets/images/icons/services1.svg" alt="mosaikk kunst logo">
+                    </div>
+                    <div class="pb-8">
+                        <h3>Mosaikk Kunst </h3>
+                        <p class="text-secondary text-14">Sett inkluderer: Ramme, A4 størrelse treplate, små fargede
+                            steiner, gummi.</p>
+                        <p class="text-13 font-bold">400 kr</p>
+                        <a href="#" class="text-orange font-bold text-13">
+                            Les mer
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded p-4">
+                    <div class="items-center bg-yellow h-56 rounded">
+                        <img src="/assets/images/icons/services2.svg" alt="akvarellmaling logo">
+                    </div>
+                    <div class="pb-8">
+                        <h3>Akvarellmaling </h3>
+                        <p class="text-secondary text-14">Sett inkluderer: Ramme, akvarellpapir med designmal,
+                            akvarellfarger,
+                            pensler.</p>
+                        <p class="text-13 font-bold">200 kr</p>
+                        <a href="#" class="text-orange font-bold text-13">
+                            Les mer
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded p-4">
+                    <div class="items-center bg-sage h-56 rounded">
+                        <img src="/assets/images/icons/services3.svg" alt="Lerretsmaling logo">
+                    </div>
+                    <div class="pb-8">
+                        <h3>Lerretsmaling </h3>
+                        <p class="text-secondary text-14">Sett inkluderer: Ramme, akrylpapir med designmal, akrylfarger,
+                            pensler.</p>
+                        <p class="text-14 font-bold">300 kr</p>
+                        <a href="#" class="text-orange font-bold text-13">
+                            Les mer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--About two col -->
+        <section id="about">
+            <div class="media-text bg-pink p-12">
+                <div class="hero-image bg-yellow rounded items-center">
+                    <div class="flower  items-center">
+                        <img src="/assets/images/icons/flower.svg" alt="blomst ikon">
+                        <h3 class="uppercase font-bold text-13 text-green">Sammen skaper vi mer</h3>
+                    </div>
+
+                </div>
+                <div class="hero-content">
+                    <p class="uppercase text-orange font-bold text-13">Velkommen til Craftsvilla</p>
+
+                    <h2 class="hero-description">
+                        Et kreativt fellesskap
+                        for alle generasjoner.
+                    </h2>
+                    <p class="text-16 text-primary">Vi tror på verdien av å skape sammen. Her kan barn, voksne og
+                        besteforeldre utforske nye
+                        teknikker, finne roen og dele gode øyeblikk. Ingen forkunnskaper trengs — bare lysten
+                        til å prøve.</p>
+                    <div class="btn-group mt-4">
+                        <a href="#" class="btn btn-secondary">
+                            Møt Craftvilla
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
 
     </main>
     <div id="footer"></div>

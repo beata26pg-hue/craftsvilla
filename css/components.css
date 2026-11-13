@@ -19,6 +19,8 @@
     }
 
     nav ul {
+        font-size: 16px;
+        font-weight: 500;
         text-decoration: none;
         list-style: none;
         display: flex;
