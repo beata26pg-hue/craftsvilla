@@ -1,0 +1,211 @@
+:root {
+    /* COLORS – BG */
+
+    --bg-cream: #FAF5E8;
+    --bg-green: #3D5C45;
+    --bg-sage: #C2D1B3;
+    --bg-orange: #E06338;
+    --bg-yellow: #F0C261;
+    --bg-pink: #E8C4B3;
+
+    /* COLORS – TEXT */
+
+    --text-primary: #29332B;
+    --text-secondary: #6B7066;
+    --text-white: #FFFFFF;
+
+
+    /* TYPOGRAPHY */
+
+    --font-family-sans: 'DM Sans', sans-serif;
+
+    --font-size-10: 10px;
+    --font-size-11: 11px;
+    --font-size-12: 12px;
+    --font-size-13: 13px;
+    --font-size-14: 14px;
+    --font-size-16: 16px;
+    --font-size-17: 17px;
+    --font-size-18: 18px;
+    --font-size-19: 19px;
+    --font-size-21: 21px;
+    --font-size-22: 22px;
+    --font-size-32: 32px;
+    --font-size-34: 34px;
+    --font-size-36: 36px;
+    --font-size-38: 38px;
+    --font-size-40: 40px;
+    --font-size-55: 55px;
+    --font-size-62: 62px;
+    --font-size-90: 90px;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+}
+
+.container {
+    padding: 60px 80px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .container {
+        padding: 40px 40px;
+    }
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+    .container {
+        padding: 24px 20px;
+    }
+}
+
+/* Små skjermer */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 16px;
+    }
+}
+
+.container {
+    padding: clamp(16px, 5vw, 60px);
+}
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: var(--bg-cream);
+}
+
+a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* BASE BUTTONS */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 14px 24px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    text-decoration: none;
+    text-align: center;
+
+    cursor: pointer;
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:focus-visible {
+    outline: 3px solid var(--bg-yellow);
+    outline-offset: 4px;
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-primary {
+    background-color: var(--bg-orange);
+    color: var(--text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--bg-green);
+}
+
+.btn-secondary {
+    background-color: var(--bg-green);
+    color: var(--text-white);
+}
+
+.btn-secondary:hover {
+    background-color: var(-bg-orange);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(-bg-green);
+    border-color: var(-bg-green);
+}
+
+.btn-outline:hover {
+    background-color: var(--bg-green);
+    color: var(--text-white);
+}
+
+.btn-light {
+    background-color: var(--bg-cream);
+    color: var(--bg-green);
+}
+
+.btn-light:hover {
+    background-color: var(--bg-yellow);
+}
+
+.btn-text {
+    padding: 8px 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: var(--bg-green);
+}
+
+.btn-text:hover {
+    color: var(--bg-orange);
+    transform: none;
+}
+
+.btn-sm {
+    padding: 10px 18px;
+    font-size: var(--font-size-12);
+}
+
+.btn-lg {
+    padding: 17px 32px;
+    font-size: var(--font-size-16);
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+    transform: none;
+}
